@@ -1,0 +1,26 @@
+.display {
+    width: 40rem;
+    background: linear-gradient(to bottom, #61876E, #3C6255);
+    aspect-ratio: 1/1;
+    padding: 4rem;
+    display: flex;
+    gap: 2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2rem 2rem 0rem 0rem black;
+    animation-name: popup;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1)  ;
+}
+
+@keyframes popup {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
